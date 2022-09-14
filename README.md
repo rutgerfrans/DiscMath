@@ -9,7 +9,7 @@
 ## <a name=Lecture0></a> Lecture 0 6/9/22 Intro, propositional logic (Book/Lecture Notes: 1.1, 1.2, 1.3)
 ### Integers
 - Whole numbers
-- Symbol: Z
+- Symbol: ℤ
 
 ### Natural Numbers
 - All integers greater then 1
@@ -23,7 +23,7 @@
 ### Real Numbers
 - Basicly all numbers. 
 - Every possible number.
-- Symbol: R
+- Symbol: ℝ
 
 ### Divisibility
 - m is divisible by k if there is an integer n such that mInduction proofs = k * n
@@ -99,6 +99,45 @@ So:
 - This statement is only TRUE when both are TRUE or FALSE
 
 ## <a name=Lecture1></a> Lecture 1 7/9/22 First order logic, start of proofs (Book/Lecture Notes: 1.4, 1.5)
+
+### Quaintifiers
+- For all symbol: ∀
+- There exists: ∃
+**Examples:**
+- (∀ elephants)(elephants has trunk) TRUE
+- (∀ students)(students likes banana) FALSE
+- (∃ even prime number)(number bigger than 2) FALSE
+- (∀ balls in box)(balls are red) TRUE (if there are no balls in box)
+- (∃ ball in box)(ball is red) FALSE (if there are no balls in box)
+
+- To disprove a statement you have to prove the negation of that statement.
+
+**Some other examples**
+"All integers are bigger than 5", can also be written as:
+- (∀ integers)(integer > 5)
+- (∀x ∈ ℤ)(x > 5)
+- ∀x ∈ ℤ : x > 5
+
+"Some realnumber is smaller than 3", can also be written as:
+- (∃ realnumber)(realnumber < 3)
+- (∃x ∈ ℝ)(x < 3)
+- ∃x ∈ ℝ : x < 3
+
+**Now try and write the oppisite:**
+P: (∀ elephants)(elephant has trunk):
+- ¬P : ¬[(∀ elephants)(elephant has trunk)]
+- ¬P : (∃ elephant)(elephant has no trunk)
+
+Conlusion: To negate, you flip the quantifier and you negate the body.
+
+### Higher depth quantifiers
+
+**Example**
+(∃ tree t)(∀ monkeys m)(m climbs t) FALSE  
+because:
+![](MonkeyTree1.png)
+
+
 
 ## <a name=Lecture2></a> Lecture 2 8/9/22 All proof techniques except induction (Book/Lecture Notes: 1.5)
 
