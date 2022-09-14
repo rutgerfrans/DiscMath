@@ -135,7 +135,7 @@ Conlusion: To negate, you flip the quantifier and you negate the body.
 **Example**
 (∃ tree t)(∀ monkeys m)(m climbs t) FALSE  
 because:
-![](imgs/MonkeyTree1.png =100x50)
+![](imgs/MonkeyTree1.png width="100")
 
 
 
