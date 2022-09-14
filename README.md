@@ -137,6 +137,15 @@ Conlusion: To negate, you flip the quantifier and you negate the body.
 because:<br>
 <img src="imgs/MonkeyTree1.png"  width=25% height=25%>
 
+(∀ monkeys m)(∃ treet t)(m climbs t) TRUE  
+because:<br>
+<img src="imgs/MonkeyTree2.png"  width=25% height=25%>
+
+**Negation of example:**
+P: (∃ tree t)(∀ monkeys m)(m climbs t):
+- ¬P: [(∃ tree t)(∀ monkeys m)(m climbs t)]
+- ¬P: (∀ trees t)(∃ monkey m)(m does not climb t)
+
 
 
 ## <a name=Lecture2></a> Lecture 2 8/9/22 All proof techniques except induction (Book/Lecture Notes: 1.5)
