@@ -149,15 +149,15 @@ P: (∃ tree t)(∀ monkeys m)(m climbs t):
 
 ### Direct proof
 **Example 1**  
-(∀x ∈ ℤ)(∃y ∈ ℤ)(3x + y <= 4) which is TRUE
-proof by direct proof:  
+(∀x ∈ ℤ)(∃y ∈ ℤ)(3x + y <= 4) which is TRUE<br>
+*proof by direct proof:*  
 <ins>let</ins> x ∈ ℤ <ins>take</ins> y = 3-3x  
 (y ∈ ℤ because x = ℤ)  
 <ins>then</ins> 3x+y=3x+(3-3x) = 3 <= 4 which completes the proof.
 
 **Example 2**  
-(∃x ∈ ℤ)(∀y ∈ ℤ)(3x + y <= 4) which is FALSE
-proof by direct proof:  
+(∃x ∈ ℤ)(∀y ∈ ℤ)(3x + y <= 4) which is FALSE<br>
+**proof by direct proof:**  
 first we negate the proposition (WHY?) Sometimes to prove a proposition you have to disprove the negation of that proposition. In this case we have to disprove the propositio, so we are gonna prove the negation of the proposition.  
 (∀x ∈ ℤ)(∃x ∈ ℤ)(3x + y > 4)  
 <ins>let</ins> x ∈ ℤ <ins>take</ins> y = 5-3x
@@ -166,13 +166,14 @@ which completes the proof.
 
 ### Proof by Counter Example
 **Example 1**  
-(∀x ∈ ℤ)(∃y ∈ ℕ)(3x + y > 4)  TRUE
-**Proof by counter example:**  
+(∀x ∈ ℤ)(∃y ∈ ℕ)(3x + y > 4)  TRUE <br>
+*Proof by counter example:* 
 <ins>Take</ins> x = 5  
 <ins>Then</ins> for all natural numbers y we have 3x + y >= 15 + 1 (because y is ℕ) = 16 > 4 wich completes the prove.
 
 **Example 2** 
-(∀x ∈ ℝ)(∃y ∈ ℤ)(3x + y <= 4)  
+(∀x ∈ ℝ)(∃y ∈ ℤ)(3x + y <= 4)<br> 
+*Proof by counter example*
 <ins>let</ins> x ∈ ℝ: <ins>take</ins> y = ⌊3-3x⌋ (This is a flooring function, this roundsdown the function and will always be smaller then 3-3x. We have to do this because y cant by in ℤ because x is in ℝ)   
 <ins>then</ins> 3x + y = 3x + ⌊3-3x⌋   
 <= 3x + 3 - 3x = 3 <= 4 Whih is TRUE and completes the proof.
