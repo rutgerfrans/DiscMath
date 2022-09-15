@@ -150,14 +150,14 @@ P: (∃ tree t)(∀ monkeys m)(m climbs t):
 ### Direct proof
 **Example 1**  
 (∀x ∈ ℤ)(∃y ∈ ℤ)(3x + y <= 4) which is TRUE<br>
-*proof by direct proof:*  
+*proof by direct proof:*  <br>
 <ins>let</ins> x ∈ ℤ <ins>take</ins> y = 3-3x  
 (y ∈ ℤ because x = ℤ)  
 <ins>then</ins> 3x+y=3x+(3-3x) = 3 <= 4 which completes the proof.
 
 **Example 2**  
 (∃x ∈ ℤ)(∀y ∈ ℤ)(3x + y <= 4) which is FALSE<br>
-**proof by direct proof:**  
+*proof by direct proof:*<br>
 first we negate the proposition (WHY?) Sometimes to prove a proposition you have to disprove the negation of that proposition. In this case we have to disprove the propositio, so we are gonna prove the negation of the proposition.  
 (∀x ∈ ℤ)(∃x ∈ ℤ)(3x + y > 4)  
 <ins>let</ins> x ∈ ℤ <ins>take</ins> y = 5-3x
@@ -167,18 +167,53 @@ which completes the proof.
 ### Proof by Counter Example
 **Example 1**  
 (∀x ∈ ℤ)(∃y ∈ ℕ)(3x + y > 4)  TRUE <br>
-*Proof by counter example:* 
+*disprove by counter example:* <br>
 <ins>Take</ins> x = 5  
 <ins>Then</ins> for all natural numbers y we have 3x + y >= 15 + 1 (because y is ℕ) = 16 > 4 wich completes the prove.
 
 **Example 2** 
 (∀x ∈ ℝ)(∃y ∈ ℤ)(3x + y <= 4)<br> 
-*Proof by counter example*
+*disprove by counter example*<br>
 <ins>let</ins> x ∈ ℝ: <ins>take</ins> y = ⌊3-3x⌋ (This is a flooring function, this roundsdown the function and will always be smaller then 3-3x. We have to do this because y cant by in ℤ because x is in ℝ)   
 <ins>then</ins> 3x + y = 3x + ⌊3-3x⌋   
 <= 3x + 3 - 3x = 3 <= 4 Whih is TRUE and completes the proof.
 
 ## <a name=Lecture2></a> Lecture 2 8/9/22 All proof techniques except induction (Book/Lecture Notes: 1.5)
+### Proof by contradiction 
+If we prove by contradiction you try to prove ¬P = FALSE instead of p = TRUE.<br>
+You can do thi by assuming ¬P = TRUE and applying logical consequences to arrive at a contradiction.<br>
+
+**Example 1**
+*Prove that there is an infinite number of primes*<br>
+<ins>First</ins> try to prove the negation of the propisition.<br> 
+<ins>Assuming</ins>there is an infinite number of primes <br>
+<ins>Then</ins> the contradiction is thath there is a biggest prime.<br>
+<ins>let</ins> n ∈ Primes such that prime n = biggest prime.<br> 
+{p1, p2,p3,.....} = {2,3,5,..,pn}<br>
+consider the following number: <br>
+N = p1 · p2 · p3 · . . . ·pn + 1 = 2 · 3 · 5 · . . . · pn + 1<br>
+So N is the product of all prime numbers + 1.<br>
+Then N is not divisible by 2, 3, 5, 7, and eventually pn.<br>
+This means N is not divisble by any prime number.<br>
+Since every natural number >= 2 that is not a prime can be written as a product of prime factors, N is a prime number itself.<br>
+This however contradicts the assumption that pn is the biggest prime number because N is much bigger.<br>
+*Conclusion:*<br>
+So the propisition we tried to prove is FALSE, which means that there are infinite prime numbers thus the proof completes.
+
+**Example 2**
+Prove that there is no biggest number smaller then 1.<br>
+Negation = there is a biggest number x smaller then 1.<br>
+<img src="imgs/BigNumSmal1.png"  width=25% height=25%>
+<ins>let</let> x < 1 <ins>take</ins>y=(x+1)/2<br>
+<ins>then</ins> y > (x+x)/2 = 2x/2 = x, So y > x<br>
+This already tells us there is a bigger number then x, but we still have to prove y is smaller then 1.<br>
+y < (1 + 1)/2 = 1, So y is smaller then 1<br>
+x < y < 1. This proves that there is a biggest number than the biggest number we thought was te biggesst number. <br>
+So it disproves our assumption and proves the initial proposition. Which completes the proof.
+
+
+
+
 
 ## <a name=Lecture3></a> Lecture 3 13/9/22 Induction proofs (Book/Lecture Notes: 1.6)
 
