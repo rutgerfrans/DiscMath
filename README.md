@@ -211,6 +211,7 @@ y < (1 + 1)/2 = 1, So y is smaller then 1<br>
 x < y < 1. This proves that there is a biggest number than the biggest number we thought was te biggesst number. <br>
 So it disproves our assumption and proves the initial proposition. Which completes the proof.
 
+### Proof by contrapositive
 
 
 
