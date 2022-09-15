@@ -14,7 +14,7 @@
 ### Natural Numbers
 - All integers greater then 1
 - 0 is not a natural number (in this course atleast)
-- Symbol: N
+- Symbol: ℕ
 
 ### Rational Numbers
 - Any number that can be written as a/b where a and b are both integers and b is not equal to 0.
@@ -137,16 +137,45 @@ Conlusion: To negate, you flip the quantifier and you negate the body.
 because:<br>
 <img src="imgs/MonkeyTree1.png"  width=25% height=25%>
 
-(∀ monkeys m)(∃ treet t)(m climbs t) TRUE  
+(∀ monkeys m)(∃ trees t)(m climbs t) TRUE  
 because:<br>
 <img src="imgs/MonkeyTree2.png"  width=25% height=25%>
+
 
 **Negation of example:**
 P: (∃ tree t)(∀ monkeys m)(m climbs t):
 - ¬P: [(∃ tree t)(∀ monkeys m)(m climbs t)]
 - ¬P: (∀ trees t)(∃ monkey m)(m does not climb t)
 
+### Direct proof
+**Example 1**  
+(∀x ∈ ℤ)(∃y ∈ ℤ)(3x + y <= 4) which is TRUE
+proof by direct proof:  
+<ins>let</ins> x ∈ ℤ <ins>take</ins> y = 3-3x  
+(y ∈ ℤ because x = ℤ)  
+<ins>then</ins> 3x+y=3x+(3-3x) = 3 <= 4 which completes the proof.
 
+**Example 2**  
+(∃x ∈ ℤ)(∀y ∈ ℤ)(3x + y <= 4) which is FALSE
+proof by direct proof:  
+first we negate the proposition (WHY?) Sometimes to prove a proposition you have to disprove the negation of that proposition. In this case we have to disprove the propositio, so we are gonna prove the negation of the proposition.  
+(∀x ∈ ℤ)(∃x ∈ ℤ)(3x + y > 4)  
+<ins>let</ins> x ∈ ℤ <ins>take</ins> y = 5-3x
+<ins>then</ins> 3x + (5-3x) > 4 = 5 > 4 is TRUE, which means that the orignal proposition is FALSE  
+which completes the proof.
+
+### Proof by Counter Example
+**Example 1**  
+(∀x ∈ ℤ)(∃y ∈ ℕ)(3x + y > 4)  TRUE
+**Proof by counter example:**  
+<ins>Take</ins> x = 5  
+<ins>Then</ins> for all natural numbers y we have 3x + y >= 15 + 1 (because y is ℕ) = 16 > 4 wich completes the prove.
+
+**Example 2** 
+(∀x ∈ ℝ)(∃y ∈ ℤ)(3x + y <= 4)  
+<ins>let</ins> x ∈ ℝ: <ins>take</ins> y = ⌊3-3x⌋ (This is a flooring function, this roundsdown the function and will always be smaller then 3-3x. We have to do this because y cant by in ℤ because x is in ℝ)   
+<ins>then</ins> 3x + y = 3x + ⌊3-3x⌋   
+<= 3x + 3 - 3x = 3 <= 4 Whih is TRUE and completes the proof.
 
 ## <a name=Lecture2></a> Lecture 2 8/9/22 All proof techniques except induction (Book/Lecture Notes: 1.5)
 
