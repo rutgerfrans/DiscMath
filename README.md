@@ -204,7 +204,7 @@ So the propisition we tried to prove is FALSE, which means that there are infini
 Prove that there is no biggest number smaller then 1.<br>
 Negation = there is a biggest number x smaller then 1.<br>
 <img src="imgs/BigNumSmal1.png"  width=25% height=25%><br>
-<ins>let</let> x < 1 <ins>take</ins>y=(x+1)/2<br>
+<ins>let</ins> x < 1 <ins>take</ins>y=(x+1)/2<br>
 <ins>then</ins> y > (x+x)/2 = 2x/2 = x, So y > x<br>
 This already tells us there is a bigger number then x, but we still have to prove y is smaller then 1.<br>
 y < (1 + 1)/2 = 1, So y is smaller then 1<br>
