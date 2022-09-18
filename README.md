@@ -274,8 +274,13 @@ Now prove that you can make all sums of money >= 12 with these types of coins.<b
   - <ins>assume</ins> P(n) holds. Our goal is to prove P(n + 1)
   - Consider several cases:
   - **Case 1:**
-    -   we use at least two 7c coins to make n cents.
-    -   <src="imgs/cents1.png" witdh=25% height=25%>
+    - we use at least two 7c coins to make n cents. 
+    - <img src="imgs/cents1.png" witdh=25% height=25%>
+    - p(n+1) holds
+  - **Case 2:**
+    - we use atleast two 3c coins to make n cents.
+    - <img src="imgs/cents2.png" witdh=25% height=25%>
+    - p(n+1) holds
 
 
 
