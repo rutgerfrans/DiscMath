@@ -243,19 +243,42 @@ Prove (x^2 + 5x - 6 = 0) <=> (x=-6 or x=1)
   - (-6^2) + (5 * -6) - 6 = 0
   - 36 - 30 - 6 = 0 = 0 TRUE
 
-**Example** <br>
+**Example 2** <br>
 Prove For all Natural numbers m and n: x >= y + 1 <=> x^2 >= y^2 + 3 (in this case we have two variables, bit different answer)
 - First prove x >= y +1 => x^2 >= y^2 + 3
   - <ins>let</ins> x >= y + 1 this implies x^2 = (y + 1)^2
-  - x^2 >= (y + 1)(y + 1)
-  - x^2 >= y^2 + 2y + 1
-  - x^2 >= y^2 + (2 * 1) + 1 (because y >= 1)
-  - x^2 >= y^2 + 3 TRUE
-- Secondly prove x^2 >= y^2 + 3 => x >= y + 1 
-  - <ins>Let</ins> x2 ≥y2 +3 <ins>then</ins> x must be bigger then y.
-  - Since they are both natural numbers that implies x >= y + 1. TRUE
+  - x^2 ≥ (y + 1)(y + 1)
+  - x^2 ≥ y^2 + 2y + 1
+  - x^2 ≥ y^2 + (2 * 1) + 1 (because y ≥ 1)
+  - x^2 ≥ y^2 + 3 TRUE
+- Secondly prove x^2 ≥ y^2 + 3 => x ≥ y + 1 
+  - <ins>Let</ins> x2 ≥ y2 +3 <ins>then</ins> x must be bigger then y.
+  - Since they are both natural numbers that implies x ≥ y + 1. TRUE
 
 ## <a name=Lecture3></a> Lecture 3 13/9/22 Induction proofs (Book/Lecture Notes: 1.6)
+### Mathematical Induction
+- Prove that for all numbers n >= ℕ where n is constant.  
+  - First you start of by proving the <ins>base case</ins>: P(n=1)
+  - Secondly you prove that for every n >= N <ins>Inductive step</ins>: P(n) => P(n+1) 
+
+**Example 1**<br>
+We have a country that has two types of coins: 3c and 7c.<br>
+Now prove that you can make all sums of money >= 12 with these types of coins.<br>
+- Prove by induction:
+- Base case:
+  - Does P(12) hold?
+  - (3+3+3+3=12) TRUE
+- Induction step: 
+  - We need to prove the following: For al n >= 12, P(n) => P(n+1)
+  - <ins>let</ins> n be an arbitrary natural number >= 12.
+  - <ins>assume</ins> P(n) holds. Our goal is to prove P(n + 1)
+  - Consider several cases:
+  - **Case 1:**
+    -   we use at least two 7c coins to make n cents.
+    -   <src="imgs/cents1.png" witdh=25% height=25%>
+
+
+
 
 ## <a name=Lecture4></a> Lecture 4 14/9/22 Set theory - basic notations (Book/Lecture Notes: 2.1, 2.2)
 
