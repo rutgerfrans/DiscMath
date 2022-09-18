@@ -281,9 +281,35 @@ Now prove that you can make all sums of money >= 12 with these types of coins.<b
     - we use atleast two 3c coins to make n cents.
     - <img src="imgs/cents2.png" width=25% height=25%>
     - p(n+1) holds
+  - Note that atleast one of case 1 and 2 must hold. If neither hold, we would at most have one 7c coin and one 3c coin.
+  - So n >= 7 + 3 = 10. But this contradicts n >= 12. So whichever case hold we are good, P(n+1) holds.
 
+**Example 2:**<br>
+Prove by induction that for all Natural numbers n, the following holds: n&i=1∑i = (n/2)(n+1) P(n):  
+- Prove by induction:
+- Base case:
+  - Does P(1) hold?
+  - This means is it true that: 1&i=1n∑i = 1/2(1+1)
+  - which is 1 = 1 TRUE
+- Induction step:
+  - We need to prove that for all Natural numbers n, P(n) = P(n+1)
+  - Our goal is to prove P(n+1)(when P(n) is holding)
+  - We need to prove this n+1&i=1n∑i (LHS) =((n+1)/2)((n+1)+1) P(n+1) ()
+  - <ins>let</ins> n be an arbitrary number.
+  - <ins>assume</ins> P(n) holds.
+  - <ins>consider</ins> LHS = RHS + (n + 1)         (N+1 is universally true by algebra)
+  - LHS = n/2(n + 1) + (n + 1)
+  - LHS = (n + 1)((n/2) + 1)
+  - LHS = (n + 1)((n+2)/2) = 1/2(n + 1)(n + 2)
+  - 1/2(n + 1)(n + 2) = ((n + 1)/2)((n + 1) + 1) = RHS, So TRUE
 
+**Example 3**<br>
 
+**Example 4**<br>
+
+**Example 5**<br>
+
+**Example of misuse with induction**<br>
 
 ## <a name=Lecture4></a> Lecture 4 14/9/22 Set theory - basic notations (Book/Lecture Notes: 2.1, 2.2)
 
