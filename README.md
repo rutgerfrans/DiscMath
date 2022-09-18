@@ -230,6 +230,31 @@ Prove ∀x ∈ ℤ : x^2 != 3
 - √x = √3 or -√3
 - both are not an Integer.
 
+### Biconditional Proof
+- To prove a biconditional proposition such as, p <=> q, we have to prove two conditions at ones: p => q and q => p
+
+**Example 1** <br>
+Prove (x^2 + 5x - 6 = 0) <=> (x=-6 or x=1)
+- First prove (x^2 + 5x - 6 = 0) => (x=-6 or x=1)
+  - x^2 + 5x - 6 = 0 
+  - (x - 1)(x + 6) = 0
+  - So x = 1 or x = -6 TRUE
+- Secondly prove (x=-6 or x=1) => (x^2 + 5x - 6 = 0)
+  - (-6^2) + (5 * -6) - 6 = 0
+  - 36 - 30 - 6 = 0 = 0 TRUE
+
+**Example** <br>
+Prove For all Natural numbers m and n: x >= y + 1 <=> x^2 >= y^2 + 3 (in this case we have two variables, bit different answer)
+- First prove x >= y +1 => x^2 >= y^2 + 3
+  - <ins>let</ins> x >= y + 1 this implies x^2 = (y + 1)^2
+  - x^2 >= (y + 1)(y + 1)
+  - x^2 >= y^2 + 2y + 1
+  - x^2 >= y^2 + (2 * 1) + 1 (because y >= 1)
+  - x^2 >= y^2 + 3 TRUE
+- Secondly prove x^2 >= y^2 + 3 => x >= y + 1 
+  - <ins>Let</ins> x2 ≥y2 +3 <ins>then</ins> x must be bigger then y.
+  - Since they are both natural numbers that implies x >= y + 1. TRUE
+
 ## <a name=Lecture3></a> Lecture 3 13/9/22 Induction proofs (Book/Lecture Notes: 1.6)
 
 ## <a name=Lecture4></a> Lecture 4 14/9/22 Set theory - basic notations (Book/Lecture Notes: 2.1, 2.2)
