@@ -212,9 +212,23 @@ x < y < 1. This proves that there is a biggest number than the biggest number we
 So it disproves our assumption and proves the initial proposition. Which completes the proof.
 
 ### Proof by contrapositive
+- Trying to prove a proposition by contra positive looks like: p => q = ¬q => ¬p
 
+**Example 1**
+Prove -2 < x < 2 => x^2 + x -6 < 0 <br>
+- contra positive is x > 2 or x < -2 and x^2 + x - 6 => 0
+- x^2 + x - 6 => 0 = x > 2 or x < -2
+- <ins>let</ins> x ∈ ℝ <ins>such that</ins> x^2 + x - 6 >= 0 (We try to prove LHS because we can calculate x)
+- x^2 + x - 6 = (x+3)(x-2)
+- x = -3 or x = 2
+- Both need to be equal or be bigger then zero, so x >= either - 3 or 2
+- So in this case only x >= 2 holds, but that is enough to prove the statement because of the OR operator.
 
-
+**Example 2**
+Prove ∀x ∈ ℤ : x^2 != 3
+- contra positive: x^2 = 3 => x !∈ ℤ
+- √x = √3 or -√3
+- both are not an Integer.
 
 ## <a name=Lecture3></a> Lecture 3 13/9/22 Induction proofs (Book/Lecture Notes: 1.6)
 
