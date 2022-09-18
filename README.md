@@ -304,6 +304,20 @@ Prove by induction that for all Natural numbers n, the following holds: n&i=1∑
   - 1/2(n + 1)(n + 2) = ((n + 1)/2)((n + 1) + 1) = RHS, So TRUE
 
 **Example 3**<br>
+Prove that 4^n - 1 is divisible by 3, for all natural n.
+- Base Case:
+  - Does P(n=1) hold
+  - 4^1 - 1 = 3 which is divisible by 3.
+- Inducion Step:
+  - <ins>let</ins> n be an arbitrary natural number.
+  - <ins>assume</ins> P(n) holds.
+  - We want to prove P(n+1)
+  - Such that 4^(n+1) - 1 is divisible by 3
+  - 4^(n+1)- 1 = 4 * 4^n - 1
+  - = 4 * 4^n - 4 + 3
+  - = 4(4^n-1) + 3
+  - we know that 4^n-1 is divisible by 3. Multiplied by for is also still divisible by 3. And 3 by itself is aswell divisible by 3.
+  - which means the whole expression is divisible by 3, thus P(n+1) holds.
 
 **Example 4**<br>
 
