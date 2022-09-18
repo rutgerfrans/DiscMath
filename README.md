@@ -320,10 +320,22 @@ Prove that 4^n - 1 is divisible by 3, for all natural n.
   - which means the whole expression is divisible by 3, thus P(n+1) holds.
 
 **Example 4**<br>
-
-**Example 5**<br>
-
-**Example of misuse with induction**<br>
+Prove by induction that for all natural numbers n >= 3 such that n^2 > 2n + 1
+- Base case:
+  - P(3) => 3^3 > 2 * 3 + 1
+  - 9 > 7, P(3) Holds
+- Inductive step:
+  - <ins>let</ins> n be an arbitrary natural number >= 3
+  - <ins>assume</ins> that P(n) holds.
+  - We need to prove P(n+1) holds. We do this by checking the growth between the old and new
+  - (n+1)^2 > 2(n+1) + 1
+  - Note that (n+1)^2 - n^2 > 2n + 1 (by algebra)
+  - new LHS - old LHS > old RHS (by algebra)
+  - new RHS = 2(n+1) + 1, old RHS = 2n + 1
+  - new RHS - old RHS = (2(n+1) + 1) - (2n + 1) = 2, So the increase of the inequality in RHS is 2
+  - If we can show the increase in LHS >= increase in RHS we have proven P(n + 1)
+  - new LHS - old LHS = (n+1)^2 - n^2 = n^2 + 2n + 1 - n^2 = 2n + 1
+  - 2n + 1 >= 2 because n >= 3, So TRUE
 
 ## <a name=Lecture4></a> Lecture 4 14/9/22 Set theory - basic notations (Book/Lecture Notes: 2.1, 2.2)
 
