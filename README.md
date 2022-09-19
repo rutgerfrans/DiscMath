@@ -338,7 +338,50 @@ Prove by induction that for all natural numbers n >= 3 such that n^2 > 2n + 1
   - 2n + 1 >= 2 because n >= 3, So TRUE
 
 ## <a name=Lecture4></a> Lecture 4 14/9/22 Set theory - basic notations (Book/Lecture Notes: 2.1, 2.2)
+### Set Theory
+- Good examples of infinite sets are ℤ and ℕ.
+- Examples of finite sets:
+  - {1,2,3,4}
+  - {spaghetti, rice, patatoes, bread}
+  - {1,2, pi, cricket} 
 
+- Sets are UNORDERD.
+  - {1,2,3,4} = {2,1,4,3} 
+- Sets have NO DUPLICATES
+  - {1,2,3,3} = {1,2,3}
+- Sets are allowed to be empty.
+  - The empty set: Φ or {}
+- Sets can be finite or infinite.
 
+### Cardinality
+- We denote the size of a set A as |A|
+- "formally | cardinality"
+- eg. cardinality of |{1,2,3,4}| = 4 and the cardinality of |{1,2,3,3}| = 3
 
+### Some symbols
+- Is in a set: ∈
+- Is not in a set: ∉
 
+- A = {1,{2,3}} |A|=2
+  - 1 ∈ A
+  - {2,3} ∈ A
+  - {1} ∉ A
+  - 2 ∉ A
+  - 3 ∉ A
+  - Φ ∉ A
+
+<img src="imgs/set.png" width=15% height=15%>
+
+### Describing elements of a set
+<ins>Let</ins> p be the set of prime numbers or,
+- p = {x:n is a prime number}
+- p = {x ∈ ℕ ^ is prime}
+- p = {x:x ∈ ℕ ^ is prime}
+
+### Subsets
+- A = {x : x is student}
+- B = {x : x is a student at DACS}
+- Clearly B is "inside" A
+- "Formally we say B is a subset of A."
+- Symbol: B ⊆ A 
+- not the same as ∈
