@@ -385,3 +385,21 @@ Prove by induction that for all natural numbers n >= 3 such that n^2 > 2n + 1
 - "Formally we say B is a subset of A."
 - Symbol: B ⊆ A 
 - not the same as ∈
+
+#### Formal Definition 
+- B ⊆ A
+- Also means: for all x ∈ B , x ∈ A
+- But also: (∀x ∈ B)(∀x ∈ A)
+- But also: if x ∈ B  then x ∈ A
+
+- is A ⊆ A TRUE (motivation: let x b an arbitrary element A, we need to show x ∈ A)
+- is Φ ⊆ A TRUE (because there is nothing to prove in Φ, so the ∀ quantifier is empty <-> vacuous truth)
+- is Φ ⊆ Φ TRUE
+
+**A = {1,2} **
+- 1 ∈ A
+- 1 ⊆ A
+- {1} ⊆ A
+- {1,2} ⊆ A
+- {1,3} ⊆ A
+- 
