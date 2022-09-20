@@ -396,10 +396,45 @@ Prove by induction that for all natural numbers n >= 3 such that n^2 > 2n + 1
 - is Φ ⊆ A TRUE (because there is nothing to prove in Φ, so the ∀ quantifier is empty <-> vacuous truth)
 - is Φ ⊆ Φ TRUE
 
-**A = {1,2} **
-- 1 ∈ A
-- 1 ⊆ A
-- {1} ⊆ A
-- {1,2} ⊆ A
-- {1,3} ⊆ A
-- 
+**A = {1,2} **<br>
+- 1 ∈ A TRUE
+- 1 ⊆ A FALSE (works only for sets)
+- {1} ⊆ A TRUE 
+- {1,2} ⊆ A TRUE
+- {1,3} ⊆ A FALSE
+- Φ ⊆ A TRUE (Always!)
+- Φ ∈ A FALSE
+- {1} ∈ A FALSE
+
+**Some other examples: **<br>
+- A = {1,2,{3}}
+  - {1} ∈ A TRUE
+  - {1} ⊆ A TRUE
+- Some facts with Φ
+  - - Φ = {Φ} FALSE
+  - |Φ| = 0
+  - |{Φ}| = 1
+- A = {1,2,{3}}
+  - {1,2,3} ⊆ A FALSE
+- B = {1,2,Φ}
+  - Φ ⊆ B TRUE
+  - Φ ∈ B TRUE
+  - Φ ∈ Φ FALSE
+
+#### Set equality
+- {-1,1,2} = {-1,2,1}
+- {2,1,-1,-2} = {a ∈ ℝ: x^2 = 4 v x^2 = 1} <br>
+So what ds A = B mean?<br>
+
+**Definition A=B**
+- A = B <=> (A⊆B)^(B⊆A)
+- A = B <=> ((x∈A => x∈B) ^ (x∈B => x∈A))
+- To prove that A=B, you can prove A⊆B and then also that B⊆A!
+
+**Alternative definition: **<br>
+- A = B <=> (x∈A <=> x∈B)
+
+**Union**<br>
+
+
+
